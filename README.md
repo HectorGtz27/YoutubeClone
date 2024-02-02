@@ -1,3 +1,3 @@
 # YoutubeClone
 
-<img src="images">
+![Example Image](images/example.jpg)
