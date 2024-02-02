@@ -1,0 +1,146 @@
+.thumbnail {
+  width: 100%;
+}
+
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: white;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50%;
+
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author, .video-stats{
+  font-size: 12px;
+  color: #AAAAAA;
+}
+
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 40px;
+}
+
+
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+
+
+/* Toltip for channel */
+
+.profile-picture-container{
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  top: -40px;
+}
+
+.channel-container-tooltip {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  background-color: black;
+  width: 200px;
+  padding: 12px 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+  border-color: #222222;
+  border-style: solid;
+  border-radius: 6px;
+  z-index: 300;
+  top:20px;
+
+  position: absolute;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+
+}
+
+.profile-picture-container:hover .channel-container-tooltip {
+  opacity: 1;
+}
+
+.description-channel-picture{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.description-title{
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.description-subtitle{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  margin: 0;
+  color: white;
+}
+
+
